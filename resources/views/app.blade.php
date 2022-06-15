@@ -12,7 +12,7 @@
         <link href="{{ mix('css/index.css') }}" rel="stylesheet">
         @stack('css')
     </head>
-    <body class="antialiased">
+    <body id="app" class="antialiased">
         <x-header></x-header>
         @yield('content')
         <x-footer></x-footer>

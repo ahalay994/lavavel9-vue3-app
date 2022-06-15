@@ -15,7 +15,10 @@ class Header extends Component
      * @var string
      */
     private string $logo;
-
+    /**
+     * @var object
+     */
+    private object $user;
 
     /**
      * Create a new component instance.
@@ -27,26 +30,36 @@ class Header extends Component
         $this->menu = [
             [
                 'name' => 'Home',
-                'route' => 'home'
+                'route' => 'home',
+                'link' => '/',
             ],
             [
                 'name' => 'About',
-                'route' => 'about'
+                'route' => 'about',
+                'link' => '/about',
             ],
             [
                 'name' => 'Service',
-                'route' => 'about'
+                'route' => 'about',
+                'link' => '/about',
             ],
             [
                 'name' => 'Pricing',
-                'route' => 'about'
+                'route' => 'about',
+                'link' => '/about',
             ],
             [
                 'name' => 'Contact',
-                'route' => 'about'
+                'route' => 'about',
+                'link' => '/about',
             ],
         ];
-        $this->logo = 'logo';
+        $this->logo = '/images/logo.jpg';
+        $this->user = (object)[
+            'name' => '',
+            'email' => 'example@gmail.com',
+            'logo' => '/images/logo.jpg',
+        ];
     }
 
     /**
@@ -57,8 +70,10 @@ class Header extends Component
     public function render(): View
     {
         return view('components.header', [
+            'appName' => env('APP_NAME'),
             'logo' => $this->logo,
             'menu' => $this->menu,
+            'user' => $this->user,
         ]);
     }
 }

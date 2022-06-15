@@ -15,7 +15,8 @@ const ImageminPlugin = require( 'imagemin-webpack-plugin' ).default;
 mix
     // js
     .js('resources/js/app.js', 'public/js')
-    .js('resources/js/Pages/main-page.js', 'public/js/main-page.js')
+    .js('resources/js/pages/*.js', 'public/js/pages')
+    .js(['resources/js/components/header.js', 'resources/js/components/footer.js'], 'public/js/components')
     // vue
     .vue()
     // css

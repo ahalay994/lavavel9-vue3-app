@@ -9,5 +9,5 @@
 @endsection
 
 @push('js')
-    <script src="{{ mix('js/main-page.js') }}"></script>
+    <script src="{{ mix('js/pages/main-page.js') }}"></script>
 @endpush
