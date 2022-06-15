@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+* {
+  font-family: "PT Serif", serif;
+}
+
+h1, .h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h2, .h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h3, .h3 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h4, .h4 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h5, .h5 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h6, .h6 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+}
