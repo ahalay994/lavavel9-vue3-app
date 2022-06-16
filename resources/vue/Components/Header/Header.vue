@@ -7,7 +7,6 @@
             <!-- Dropdown menu -->
             <v-header-menu
                 :menu="menu"
-                type="mobile"
                 :currentPage="currentPage"
                 class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
                 id="dropdown"
@@ -20,7 +19,6 @@
 
         <v-header-menu
             :menu="menu"
-            type="desktop"
             :currentPage="currentPage"
             :class="{'hidden': !toggleMobileMenuState}"
             class="justify-between items-center w-full md:flex md:w-auto md:order-1"

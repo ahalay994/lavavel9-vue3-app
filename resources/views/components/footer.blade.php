@@ -1,3 +1,3 @@
-<footer>
-    <h2>Footer</h2>
+<footer id="footer" class="container mx-auto">
+    <v-footer></v-footer>
 </footer>

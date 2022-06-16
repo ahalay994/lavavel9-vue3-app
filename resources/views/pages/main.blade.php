@@ -1,10 +1,10 @@
 @extends('app')
 
+@include('components.meta', ['meta' => $meta])
+
 @section('content')
     <div id="main-page">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center py-4 sm:pt-0">
-            <main-page></main-page>
-        </div>
+        <main-page></main-page>
     </div>
 @endsection
 
